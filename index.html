@@ -227,10 +227,10 @@ canvas {
         var results = regex.exec(location.search);
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
-    var year = getUrlParameter('year') || 2004;
-    var month = getUrlParameter('month') || 8;
-    var day = getUrlParameter('day') || 3;
-    var userName = getUrlParameter('name') || 'cậu';
+    var year = getUrlParameter('year') || NaN;
+    var month = getUrlParameter('month') || NaN;
+    var day = getUrlParameter('day') || NaN;
+    var userName = getUrlParameter('name') || 'Hạ Ly';
     
     document.addEventListener("DOMContentLoaded", function() {
         console.log("User Name:", userName); 
